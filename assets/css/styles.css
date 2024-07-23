@@ -18,7 +18,7 @@
     --primary-bg-color: #E9E9E9;
     --secondary-bg-color: #C7C8C9;
     --border-color: #C7C8C9;
-    --secondary-border-color:#c7c8c9; 
+    --secondary-border-color:#9A9A9C; 
     --title-color: #0B0B0F;
     --text-color: #28292E;
     --link-color: #28292E;
@@ -29,29 +29,45 @@ html[data-theme='light'] .brand__logo{
     filter:invert(1);
 }
 
-/* html[data-theme='light'] .technologies__logo {
+html[data-theme='dark'] .technologies__logo {
     filter: invert(80%);
-} */
+}
 
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
 
 h1 > b{
     font-weight: 400;
 }
 h1{
     font-size: 2rem;
-   
 }
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+  
+
+h3 {
+    font-size: 1.55rem;
+    text-align: left;
+}
+
 h1, h2, h3{
     font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     color: var(--title-color);
     font-weight: 200;
 }
-
-p{
+p, span, li {
+    font-size: 1rem;
     color: var(--text-color);
-    font-size: 1.25rem;
 }
+
 
 i{
     color: var(--icon-color);
@@ -180,12 +196,14 @@ body{
     border: 1px solid var(--primary-color);
 }
 
+main, .projects, .about, .contact {
+    padding: 2.5rem 1rem;
+}
 
 main{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2.5rem 1rem;
 }
 
 .main__content__1{
@@ -237,7 +255,88 @@ main{
 
 .technologies__logo{
     height: 2.4rem;
+    color: var(--icon-color);
 }
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.projects__card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__cover {
+    width: 100%;
+    border-radius: 0.2rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+.card__title{
+    font-size: 1.5rem;
+}
+.card__description{
+    font-size: 1rem;
+    color: var(--title-color);
+}
+.card__list{
+    margin-left: 1rem;
+}
+.card__item{
+    list-style: disc;
+}
+
+.card__buttons, .description__buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .card__buttons .btn {
+    padding: .65rem 1.25rem;
+  }
+  
+  .card__buttons .btn span {
+      font-size: 1rem;
+  }
+  
+  .card__body .technologies__list {
+    gap: .75rem;
+  }
+  
+  .card__body .technologies__item {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .card__body .technologies__logo {
+    height: 2rem;
+  }
+  
+  .projects .btn {
+    width: auto;
+    margin: auto;
+  }
+   
     
 footer{
     margin-bottom: 5rem;
@@ -274,8 +373,11 @@ footer p{
         max-width: 600px;
         font-size: 4rem;
     }
+    .projects > h2{
+        font-size: 3rem;
+    }
 
-    main{
+    main, .projects{
         padding: 8rem 6rem 4rem 6rem;
     }
 
@@ -296,12 +398,31 @@ footer p{
         margin: 0;
     }
 }
+@media ( width > 992px ){
+    .projects__card.card__reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+}
+
 
 @media ( width > 1200px ){
+    h1{
+        font-size: 5rem;   
+    }
+    h2{
+        font-size: 4rem;   
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    p, span, li {
+        font-size: 1.15rem;
+    }
     .main__content__1 .btn{
         width: 30%;
     }
-    main{
+    main, .projects{
         padding: 10rem 6rem 2rem;
     }
     .technologies{
@@ -316,6 +437,14 @@ footer p{
     .technologies__list {
         gap: 1rem;
       }
+
+      .projects__card{
+        flex-direction: row;
+    }
+
+    .card__cover{
+        width: 50%;
+    }
   
 
 }
