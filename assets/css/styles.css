@@ -43,24 +43,24 @@ h1 > b{
 }
 
 h1{
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.50rem;
   text-align: center;
   letter-spacing: 0.4rem;
 }
   
 h3 {
-  font-size: 1.55rem;
+  font-size: 1.30rem;
   text-align: left;
 }
 
 h4 {
   color: var(--primary-color);
   font-weight: 400;
-  font-size: 1.15rem;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -72,7 +72,7 @@ h1, h2, h3{
 }
 
 p, span, li {
-  font-size: 1rem;
+  font-size: .875rem;
   color: var(--text-color);
 }
 
@@ -146,6 +146,7 @@ body{
   bottom: 0;
   justify-content: space-between;
   border-top: 1px solid var(--border-color);
+  z-index: 99;
 }
 
 .menu__link {
@@ -519,9 +520,29 @@ footer p{
   padding: 1rem;
 }
 
-@media ( width > 250px ){
+@media ( width > 300px ){
   .menu__text{
     display: flex;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+    
+  h3 {
+    font-size: 1.55rem;
+  }
+  
+  h4 {
+    font-size: 1.15rem;
+  }
+
+  p, span, li {
+    font-size: 1rem;
   }
 }
 
@@ -546,7 +567,7 @@ footer p{
   }
 
   .main__content__1 > h1{
-    max-width: 600px;
+    max-width: 37.5rem;
     font-size: 4rem;
   }
 
