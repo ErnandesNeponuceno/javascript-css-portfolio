@@ -38,9 +38,11 @@
             </ul>
         </nav>
         <div class="header__brand">
-            <img class="header__logo" src="assets/img/ernandes-2.png" alt="Icone foto de perfil">
+            <img class="header__logo" src="assets/img/ernandes2.png" alt="Icone foto de perfil">
         </div>
-        <i id="toggleTheme" class="bi bi-sun"></i>
+        <div class="header__toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>
     </header>
     <nav>
         <ul class="menu menu__mobile">
@@ -70,46 +72,52 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main id="home">
         <div class="main__content__1">
             <h1><b>Soluções Criativas &</b> Desenvolvimento Front-end</h1>
             <p>Ernandes Neponuceno, Brasília-DF, Desenvolvedor Front-end.</p>
             <ul class="menu menu__social">
                 <li>
-                    <a class="menu__link" href="">
+                    <a class="menu__link" href="https://github.com/ernandesneponuceno">
                         <i class="menu__icon bi bi-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="menu__link" href="">
+                    <a class="menu__link" href="https://www.linkedin.com/in/ernandes-neponuceno/">
                         <i class="menu__icon bi bi-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="menu__link" href="">
+                    <a class="menu__link" href="https://wa.me/5561995713388">
                         <i class="menu__icon bi bi-whatsapp"></i>
                     </a>
                 </li>
             </ul>
-            <button class="btn btn--primary">
-                <span>VER PROJETOS</span>
-                <i class="bi bi-arrow-down-right"></i>
-            </button>
+            <a href="#projetos">
+                <button class="btn btn--primary">
+                  <span>Ver Projetos</span>
+                  <i class="bi bi-arrow-down-right"></i>
+                </button>  
+            </a>
         </div>
         <div class="main__content__2">
-            <iframe src="https://www.youtube.com/embed/HXKz2-Sohfo" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            
+                <iframe src="https://www.youtube.com/embed/HnvNC8qgTS4?si=C6uEOzc477OhmlXL" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </main>
     <section class="technologies">
         <h2>Conhecimento nas principais tecnologias do mercado</h2>
         <ul class="technologies__list">
             <li class="technologies__item">
-                <img class="technologies__logo" src="assets/img/tech/Angular.svg" alt="Logo Angular">
+                <img class="technologies__logo" src="assets/img/tech/css.svg" alt="Logo CSS">
             </li>
             <li class="technologies__item">
                 <img class="technologies__logo" src="assets/img/tech/Javascript.svg" alt="Logo Javascript">
+            </li>
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/img/tech/Angular.svg" alt="Logo Angular">
             </li>
             <li class="technologies__item">
                 <img class="technologies__logo" src="assets/img/tech/TypeScript.svg" alt="Logo TypeScript">
@@ -128,33 +136,36 @@
             <div class="projects__card">
                 <img class="card__cover" src="assets/img/3.png" alt="">
                 <div class="card__body">
-                    <h3 class="card__title">Cafeteria Del Grano</h3>
-                    <p class="card__description">Projeto de uma cafeteria com cardápio.</p>
+                    <h3 class="card__title">Projeto Clínica Odonto +</h3>
+                    <p class="card__description">Site completo para uma clinica de odontologia.</p>
                     <ul class="card__list">
-                        <li class="card__item">Exibição de diferentes tipos de cafés em cards.</li>
-                        <li class="card__item">Carregamento dinâmico dos dados dos produtos a partir de um arquivo JSON.
-                        </li>
-                        <li class="card__item">Modal para visualizar detalhes do produto ao clicar em um card.</li>
+                        <li class="card__item">Site completo com 4 páginas responsivas.</li>
+                        <li class="card__item">Validação de campos de formularios.</li>
+                        <li class="card__item">Utilização de Angular e TypeScript na criação de elementos inteligentes.</li>
                     </ul>
                     <ul class="technologies__list">
                         <li class="technologies__item">
                             <img class="technologies__logo" src="assets/img/tech/css.svg" alt="Logo CSS">
                         </li>
                         <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Javascript.svg" alt="Logo Javascript">
+                            <img class="technologies__logo" src="assets/img/tech/Typescript.svg" alt="Logo Typescript">
                         </li>
                         <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Bootstrap.svg" alt="Logo Bootstrap">
+                            <img class="technologies__logo" src="assets/img/tech/Angular.svg" alt="Logo Angular">
                         </li>
                     </ul>
                     <div class="card__buttons">
-                        <button class="btn btn--primary">
-                            <span>PRÉVIA</span>
-                            <i class="bi bi-arrow-up-right"></i>
-                        </button>
-                        <button class="btn">
-                            <span>Repositório</span>
-                        </button>
+                        <a href="https://angular-typescript-css-site-clinica.vercel.app/home">
+                            <button class="btn btn--primary">
+                                <span>PRÉVIA</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/ErnandesNeponuceno/angular-typescript-css-site-clinica">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -181,46 +192,53 @@
                         </li>
                     </ul>
                     <div class="card__buttons">
-                        <button class="btn btn--primary">
-                            <span>PRÉVIA</span>
-                            <i class="bi bi-arrow-up-right"></i>
-                        </button>
-                        <button class="btn">
-                            <span>Repositório</span>
-                        </button>
+                        <a href="https://javascript-bootstrap-css-cafeteria.vercel.app/">
+                            <button class="btn btn--primary">
+                                <span>PRÉVIA</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/ErnandesNeponuceno/javascript-bootstrap-css-cafeteria">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="projects__card">
                 <img class="card__cover" src="assets/img/2.png" alt="">
                 <div class="card__body">
-                    <h3 class="card__title">Cafeteria Del Grano</h3>
-                    <p class="card__description">Projeto de uma cafeteria com cardápio.</p>
+                    <h3 class="card__title">PlayStation Store</h3>
+                    <p class="card__description">Projeto de clone fiel da PS Store com Angular.</p>
                     <ul class="card__list">
-                        <li class="card__item">Exibição de diferentes tipos de cafés em cards.</li>
-                        <li class="card__item">Carregamento dinâmico dos dados dos produtos a partir de um arquivo JSON.
-                        </li>
-                        <li class="card__item">Modal para visualizar detalhes do produto ao clicar em um card.</li>
+                        <li class="card__item">Clone fiel da página PS Store.</li>
+                        <li class="card__item">Criação de elementos dinamicamente com a diretiva NgFor.</li>
+                        <li class="card__item">Utilização da biblioteca Swiper.</li>
                     </ul>
                     <ul class="technologies__list">
                         <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/img/tech/Angular.svg" alt="Logo Angular">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/img/tech/Typescript.svg" alt="Logo Typescript">
+                        </li>
+                        <li class="technologies__item">
                             <img class="technologies__logo" src="assets/img/tech/css.svg" alt="Logo CSS">
-                        </li>
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Javascript.svg" alt="Logo Javascript">
-                        </li>
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Bootstrap.svg" alt="Logo Bootstrap">
                         </li>
                     </ul>
                     <div class="card__buttons">
-                        <button class="btn btn--primary">
-                            <span>PRÉVIA</span>
-                            <i class="bi bi-arrow-up-right"></i>
-                        </button>
-                        <button class="btn">
-                            <span>Repositório</span>
-                        </button>
+                        <a href="https://angular-ps-store-smi3.vercel.app/">
+                            <button class="btn btn--primary">
+                                <span>PRÉVIA</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/ErnandesNeponuceno/angular-ps-store">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -237,17 +255,18 @@
             <img class="about__photo" src="assets/img/ernandes.png" alt="">
             <div class="about__description">
                 <h2>Sobre mim</h2>
-                <p>Elidiana Andrade. Apaixonada por artes e tecnologia, meu primeiro "Hello World" foi na
-                    pré-adolescência quando tive contato com HTML, CSS e um pouco de JavaScript e Notepad++. Atualmente
-                    curso especialização em Desenvolvimento de Software com Metodologias Ágeis e atuo como instrutora e
-                    desenvolvedora freelance.
+                <p>Ernandes Neponuceno. Sou natural do Maranhão e apaixonado por artes, tecnologia e ficção científica. 
+                    Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e cursos para Desenvolvimento Front-end
+                    (HTML5, CSS3, JavaScript, TypeScript e Angular). Com a realização de projetos práticos, adquiri conhecimento extra em Tailwind,
+                    Bootstrap, conceitos essenciais de Python, bancos de dados (SQL), sistema de controle de versionamento
+                    Git e GitHub e metodologias ágeis como Scrum e Kanban.
                 </p>
                 <div class="about__icons">
                     <i class="bi bi-translate"></i>
-                    <span>Inglês: Intermediário | Espanhol: Básico</span>
+                    <span>Inglês: Intermediário</span>
                 </div>
                 <div class="description__buttons">
-                    <a href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
+                    <a href="https://www.linkedin.com/in/ernandes-neponuceno/" target="_blank">
                         <button class="btn btn--primary">
                             <span>Conecte-se Comigo</span>
                             <i class="bi bi-arrow-up-right"></i>
@@ -265,29 +284,55 @@
             <div class="col1">
                 <div class="row1">
                     <h3>Formação</h3>
-                    <h4>Desenvolvimento de Software com Metodologia Ágil</h4>
-                    <span>Abr 2023 - Atualmente</span>
+                    <h4>Análise e Desenvolvimento de Sistemas</h4>
+                    <span>Mar 2023 - Atualmente</span>
                     <div class="about__icons">
                         <i class="bi bi-bank"></i>
-                        <span>Universidade Salvador</span>
+                        <span>Gran Faculdade</span>
                     </div>
                     <div class="about__icons">
                         <i class="bi bi-mortarboard"></i>
-                        <span>Pós-graduação Lato Sensu - Especialização</span>
+                        <span>Graduação - Tecnologo</span>
+                    </div>
+                    
+                </div>
+                <div class="row1">
+                    <h4>Arquitetura e Urbanismo</h4>
+                    <span>Jun 2018 - Jun 2024</span>
+                    <div class="about__icons">
+                        <i class="bi bi-bank"></i>
+                        <span>Universidade do Distrito Federal - UDF</span>
+                    </div>
+                    <div class="about__icons">
+                        <i class="bi bi-mortarboard"></i>
+                        <span>Graduação - Bacharelado</span>
                     </div>
                 </div>
                 <div class="row2">
                     <h3>Experiências</h3>
-                    <h4>Instrutora</h4>
-                    <span>Digital Innovation One. Fev 2023 - Atualmente</span>
-                    <span>Produção de conteúdos educacionais direcionados a
-                        alunos iniciantes que desejam construir uma base no Desenvolvimento Front-end.
+                    <h4>GRAN EDUCAÇÃO E TECNOLOGIA</h4>
+                    <span>Analista - Salesforce</span>
+                    <span>Mar 2021 - Nov 2023</span>
+                    <span>
+                        Desenvolvi habilidades e conhecimentos em Salesforce, incluindo Sales
+                        e Service Cloud, desenvolvimento Apex, componentes LWC, integrações REST, e consumo de APIs. Adquiri
+                        experiência com princípios de orientação a objetos, desenvolvimento low code (Flow), configurações da
+                        plataforma (aplicativos, campos, páginas do Lightning, permissões, relatórios, painéis etc.). Minhas
+                        atividades incluíam a criação de scripts para atendimento e onboarding do cliente, produção de vídeos
+                        de treinamento e acompanhamento de métricas. Também desenvolvi soft skills em comunicação, escrita,
+                        processos e pensamento analítico, e evolui meus conhecimentos em Microsoft 365, Google Workspace, e
+                        metodologias ágeis como Scrum e Kanban.
                     </span>
-                    <ul class="about__list">
-                        <li class="about__item">Elaboração de ementas;</li>
-                        <li class="about__item">Ministração de aulas assíncronas;</li>
-                        <li class="about__item">Produção de materiais complementares.</li>
-                    </ul>
+                    <h4 class="row2__experiencia2">TIVIT TECNOLOGIA - PROJETO CAIXA</h4>
+                    <span>Ouvidor</span>
+                    <span>Jul 2016 - Set 2019</span>
+                    <span>
+                        Suporte e atendimento em primeira instância para demandas gerais da instituição, tais como
+                        informações sobre agências, aplicativos, sites e outros canais. Suporte técnico e atendimento
+                        personalizado em segundo nível, com foco em serviços relacionados a financiamentos habitacionais.
+                        Registro de solicitações para utilização do FGTS em financiamentos, solicitações de pausas e registro de
+                        sinistros. Atendimento receptivo por telefone, chat e WhatsApp.
+                    </span>
                 </div>
             </div>
             <div class="col2">
@@ -295,50 +340,111 @@
                 <div id="accordion">
                     <div class="accordion__item active">
                         <button class="accordion__header start">
-                            <span>Versionamento de Código com Git e GitHub</span>
+                            <span>Formação Angular</span>
                             <i class="bi bi-caret-down-fill"></i>
                         </button>
                         <div class="accordion__body">
                             <p>
-                                Digital Innovation One. Fev 2023. 2h.
+                                Digital Innovation One. Mai 2024. 37h.
                             </p>
                             <p>
-                                O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em
-                                diferentes sistemas
-                                operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a
-                                criação e clonagem
-                                até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e
-                                sincronizar alterações
-                                com o repositório remoto.
+                                Compreensão dos fundamentos do Angular, sua 
+                                arquitetura e configuração do ambiente de desenvolvimento.
+                                TypeScript: Aprendizado da linguagem TypeScript, na qual o Angular é construído.
+                                Componentes e Templates: Criação e uso de componentes, e construção de templates.
+                                Data Binding e Diretivas: Exploração de data binding e uso de diretivas Angular.
+                                Serviços e Injeção de Dependência: Implementação de serviços e compreensão da injeção 
+                                de dependência.
+                                Roteamento e Navegação: Configuração e gerenciamento de roteamento e navegação em 
+                                aplicativos Angular.
+                                Cliente HTTP: Comunicação com serviços de backend usando o módulo cliente HTTP.
+                                Formulários: Trabalho com formulários baseados em templates e reativos.
+                                Tópicos Avançados: Otimização de desempenho, Angular CLI e estratégias de implantação.
                             </p>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <button class="accordion__header">
-                            <span>Contribuindo em um Projeto Open Source no GitHub</span>
+                            <span>Formação JavaScript Developer</span>
                             <i class="bi bi-caret-down-fill"></i>
                         </button>
                         <div class="accordion__body">
                             <p>
-                                Digital Innovation One. Fev 2023. 1h.
+                                Digital Innovation One. Jan 2024. 39h.
                             </p>
                             <p>
-                                Lab prático sobre colaboração em projetos de código aberto.
+                                Requisições Assíncronas (Async/Await):
+                                Implementação de requisições assíncronas com Async/Await para melhorar a eficiência e responsividade das aplicações.     
+                                Manipulação do DOM:
+                                Habilidade para manipular o DOM de forma eficaz, dinâmica e interativa.                          
+                                Utilização e Funcionamento de APIs:
+                                Integração e manipulação de dados externos através de APIs, compreendendo seu funcionamento e uso correto.
+                                Uso de Map e Join:
+                                Aplicação das funções Map e Join para iterar e manipular elementos de arrays de forma concisa.
+                                Método:
+                                Adoção de boas práticas na organização e estruturação do código para alcançar objetivos propostos.
+                                Funções:
+                                Utilização de funções para encapsular e reutilizar blocos de código, promovendo modularidade e manutenibilidade no desenvolvimento web.
                             </p>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <button class="accordion__header end">
-                            <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
+                            <span>Impulso JavaScript Evolution</span>
                             <i class="bi bi-caret-down-fill"></i>
                         </button>
                         <div class="accordion__body end">
                             <p>
-                                Digital Innovation One. Fev 2023. 2h.
+                                Digital Innovation One. Ago 2024. 104h.
                             </p>
                             <p>
-                                Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a
-                                ferramenta Notion.
+                                Princípios de desenvolvimento de Software: 
+                                Introdução à programação e pensamento computacional. 
+                                Introdução ao git e GitHub.
+                                Fundamentos Web com HTML e CSS:
+                                Criação de Websites com HTML5 e CSS3.
+                                Posicionando elementos com Flexbox em CSS.
+                                Dominando a linguagem de programação com JavaScript: 
+                                Sintaxe básica e operadores em JavaScript.
+                                Funções.
+                                Debugging e error handling com JavaScript.
+                                Manipulação do D.O.M.
+                                Orientação a objetos.
+                                Introdução ao TypeScript: Explorando classes, tipos e interfaces.
+                                Desenvolvimento Web com React:
+                                Introdução ao ReactJs.
+                                Introdução do React Hooks.
+                                Banco de dados relacionais (SQL) e não relacionais (NoSQL)
+                                Introdução ao MongoDB e banco de dados NoSQL.
+                                Back-end: Criando API com NodeJs.
+                                Fundamentos de Node.js e Jest.
+                                Pirâmide de testes na prática explorando Jest e TDD.
+                                Microsserviços e integração com Node.js.
+                                Aplicando o Estilo Arquitetural REST com Node.js
+                                Criando uma API REST com Node.js e TypeORM.
+                                Integrando um Backend em Node.js com um Frontend em React.
+                                Desafios de projetos práticos. 
+                                Trabalhando com States e Effects no ReactJs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header end">
+                            <span>Transforma Tec 2024</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body end">
+                            <p>
+                                Digital Innovation One. Ago 2024. 81h.
+                            </p>
+                            <p>
+                                Trilha completa de HTML, JavaScript e CSS.
+                                Principios de Desenvolvimento de Software Colaborativo.
+                                Logica de programação.
+                                Versionamento de código com git e github.
+                                Construção de Páginas web com HTML, CSS e Javascript por meio de projetos praticos.
+                                Trabalhando com funções, objetos, classes, Arrays e estruturas de repetição com Javascript.
+                                Introdução ao consumo de API.
                             </p>
                         </div>
                     </div>
@@ -346,32 +452,32 @@
     </section>
     <section id="contato" class="contact">
         <h2>Contate-me</h2>
-        <p>Estou disponível para serviços e novas conexões. Contate-me via
+        <p>Estou disponível para novas conexões. Contate-me via
             e-mail e conecte-se comigo através das minhas redes sociais.
         </p>
         <ul class="menu menu__social">
             <li>
-                <a class="menu__link" href="https://github.com/elidianaandrade" target="_blank">
+                <a class="menu__link" href="https://github.com/ernandesneponuceno" target="_blank">
                     <i class="menu__icon bi bi-github"></i>
                     <span>GitHub</span>
                 </a>
             </li>
             <li>
-                <a class="menu__link" href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
+                <a class="menu__link" href="https://www.linkedin.com/in/ernandes-neponuceno/" target="_blank">
                     <i class="menu__icon bi bi-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
             </li>
             <li>
-                <a class="menu__link" href="" target="_blank">
-                    <i class="menu__icon bi bi-instagram"></i>
-                    <span>Instagram</span>
+                <a class="menu__link" href="https://wa.me/5561995713388" target="_blank">
+                    <i class="menu__icon bi bi-whatsapp"></i>
+                    <span>Whatsapp</span>
                 </a>
             </li>
         </ul>
-        <a href="mailto:elidianaandrade@outlook.com">
+        <a href="mailto:ernandes.nep@gmail.com">
             <button class="btn btn--primary">
-                <span class="email">elidianaandrade@outlook.com</span>
+                <span class="email">ernandes.nep@gmail.com</span>
             </button>
         </a>
     </section>
