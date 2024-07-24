@@ -57,6 +57,13 @@ h3 {
     text-align: left;
 }
 
+h4 {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: left;
+  }
+
 h1, h2, h3{
     font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -336,7 +343,135 @@ main{
     width: auto;
     margin: auto;
   }
-   
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+  }
+  
+  .about__content1, .about__content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  .about__photo {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    border-radius: 50rem;
+    border: 1px solid var(--border-color);
+  }
+  
+  .about__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .about__icons {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+  }
+  
+  .about__icons i {
+    font-size: 1.25rem;
+  }
+  
+  .about__content2 .col1, 
+  .about__content2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+  }
+  
+  .about__content2 .col1 .row1,
+  .about__content2 .col1 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; 
+  }
+  
+  .accordion__header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+  }
+  
+  .accordion__header span {
+    color: var(--title-color);
+  }
+  
+  .accordion__header.start {
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+  }
+  
+  .accordion__header.end,
+  .accordion__item.active .accordion__body.end {
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+  }
+  
+  .accordion__item.active .accordion__header.end{
+    border-radius: 0;
+  }
+  
+  .accordion__body {
+    display: none;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: 1px solid var(--border-color);
+    }
+  
+  .accordion__item.active .accordion__header {
+    background: var(--secondary-bg-color);
+  }
+  
+  .accordion__item.active .accordion__body {
+    display: flex;
+  }
+  
+  .accordion__item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .contact p {
+    text-align: center;
+  }
+  
+  .contact .btn {
+    width: auto;
+  }
+  
+  .contact .email {
+    text-transform: lowercase;
+  }
+     
     
 footer{
     margin-bottom: 5rem;
@@ -377,9 +512,15 @@ footer p{
         font-size: 3rem;
     }
 
-    main, .projects{
+    main, .projects, .about{
         padding: 8rem 6rem 4rem 6rem;
     }
+    .contact {
+        padding: 6rem;
+      }
+      .contact p {
+        width: 80%;
+      }
 
     .technologies{
         padding: 6.25rem 6rem 2rem 6rem;
@@ -399,9 +540,36 @@ footer p{
     }
 }
 @media ( width > 992px ){
+    .projects__card {
+        flex-direction: row;
+      }
+    
     .projects__card.card__reverse {
         flex-direction: row-reverse;
         justify-content: space-between;
+      }
+      .card__cover {
+        width: 55%;
+      }
+    
+      .about {
+        gap: 5rem;
+      }
+    
+      .about__content1, .about__content2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4rem;
+      }
+    
+      .about__description h2 {
+        text-align: left;
+      }
+    
+      .description__buttons {
+        justify-content: flex-start;
       }
 }
 
@@ -445,18 +613,33 @@ footer p{
     .card__cover{
         width: 50%;
     }
+    .card__buttons .btn,
+    .description__buttons .btn {
+      width: auto;
+    }
   
 
 }
 
 @media ( width > 1400px ){
+    h1 {
+        font-size: 6.25rem;
+      }
+    
+      h2 {
+        font-size: 4.5rem;
+      }
+    
+      h3 {
+        font-size: 3.25rem;
+      }
     .header{
         padding: 1rem 10rem;
     }
     main{
         padding: 10rem 12rem 2rem;
     }
-    .technologies{
-        padding: 10rem 12rem 2rem;
+    .technologies, .projects, .about{
+        padding: 10rem 12rem 4rem;
     }
 }
