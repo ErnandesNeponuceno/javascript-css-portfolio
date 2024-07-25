@@ -379,7 +379,7 @@ main{
 .about {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem
+  gap: 2.5rem
 }
 
 .about__content1, .about__content2 {
@@ -454,16 +454,16 @@ main{
   color: var(--title-color);
 }
 
-.accordion__header.start {
+.accordion__item:first-child .accordion__header {
   border-radius: 0.25rem 0.25rem 0rem 0rem;
 }
 
-.accordion__header.end,
-.accordion__item.active .accordion__body.end {
+.accordion__item:last-child .accordion__header,
+.accordion__item.active:last-child .accordion__header {
   border-radius: 0rem 0rem 0.25rem 0.25rem;
 }
 
-.accordion__item.active .accordion__header.end{
+.accordion__item.active:last-child .accordion__header{
   border-radius: 0;
 }
 
@@ -544,10 +544,14 @@ footer p{
   p, span, li {
     font-size: 1rem;
   }
+ 
 }
 
 @media ( width > 768px ){
   .menu__mobile{
+    display: none;
+  }
+  .menu__icon{
     display: none;
   }
 

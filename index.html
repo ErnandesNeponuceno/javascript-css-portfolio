@@ -14,27 +14,8 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <ul class="menu menu__principal">
-                <li class="menu__item">
-                    <a class="menu__link active" href="#home">
-                        <span class="menu__text">Home</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#projetos">
-                        <span class="menu__text">Projetos</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#sobre">
-                        <span class="menu__text">Sobre</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#contato">
-                        <span class="menu__text">Contato</span>
-                    </a>
-                </li>
+            <ul class="menu menu__principal" id="menu-container">
+                <!-- <Menu principal>-->
             </ul>
         </nav>
         <div class="header__brand">
@@ -45,31 +26,8 @@
         </div>
     </header>
     <nav>
-        <ul class="menu menu__mobile">
-            <li class="menu__item">
-                <a class="menu__link active" href="#home">
-                    <i class="menu__icon bi bi-house-door"></i>
-                    <span class="menu__text">Home</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                    <i class="menu__icon bi bi-window-stack"></i>
-                    <span class="menu__text">Projetos</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <i class="menu__icon  bi bi-person"></i>
-                    <span class="menu__text">Sobre</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#contato">
-                    <i class="menu__icon bi bi-envelope"></i>
-                    <span class="menu__text">Contato</span>
-                </a>
-            </li>
+        <ul class="menu menu__mobile" id="menu-mobile-container">
+           <!-- <Menu mobile>-->
         </ul>
     </nav>
     <main id="home">
@@ -101,7 +59,6 @@
             </a>
         </div>
         <div class="main__content__2">
-            
                 <iframe src="https://www.youtube.com/embed/HnvNC8qgTS4?si=C6uEOzc477OhmlXL" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
                 picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -109,139 +66,14 @@
     </main>
     <section class="technologies">
         <h2>Conhecimento nas principais tecnologias do mercado</h2>
-        <ul class="technologies__list">
-            <li class="technologies__item">
-                <img class="technologies__logo" src="assets/img/tech/css.svg" alt="Logo CSS">
-            </li>
-            <li class="technologies__item">
-                <img class="technologies__logo" src="assets/img/tech/Javascript.svg" alt="Logo Javascript">
-            </li>
-            <li class="technologies__item">
-                <img class="technologies__logo" src="assets/img/tech/Angular.svg" alt="Logo Angular">
-            </li>
-            <li class="technologies__item">
-                <img class="technologies__logo" src="assets/img/tech/TypeScript.svg" alt="Logo TypeScript">
-            </li>
-            <li class="technologies__item">
-                <img class="technologies__logo" src="assets/img/tech/Bootstrap.svg" alt="Logo Bootstrap">
-            </li>
-            <li class="technologies__item">
-                <img class="technologies__logo" src="assets/img/tech/Tailwind.svg" alt="Logo Tailwind">
-            </li>
+        <ul class="technologies__list" id="technologies-container">
+            <!-- <Icones tecnologias>-->
         </ul>
     </section>
     <section id="projetos" class="projects">
         <h2>Projetos</h2>
-        <div class="projects__container">
-            <div class="projects__card">
-                <img class="card__cover" src="assets/img/3.png" alt="">
-                <div class="card__body">
-                    <h3 class="card__title">Projeto Clínica Odonto +</h3>
-                    <p class="card__description">Site completo para uma clinica de odontologia.</p>
-                    <ul class="card__list">
-                        <li class="card__item">Site completo com 4 páginas responsivas.</li>
-                        <li class="card__item">Validação de campos de formularios.</li>
-                        <li class="card__item">Utilização de Angular e TypeScript na criação de elementos inteligentes.</li>
-                    </ul>
-                    <ul class="technologies__list">
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/css.svg" alt="Logo CSS">
-                        </li>
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Typescript.svg" alt="Logo Typescript">
-                        </li>
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Angular.svg" alt="Logo Angular">
-                        </li>
-                    </ul>
-                    <div class="card__buttons">
-                        <a href="https://angular-typescript-css-site-clinica.vercel.app/home">
-                            <button class="btn btn--primary">
-                                <span>PRÉVIA</span>
-                                <i class="bi bi-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        <a href="https://github.com/ErnandesNeponuceno/angular-typescript-css-site-clinica">
-                            <button class="btn">
-                                <span>Repositório</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__card card__reverse">
-                <img class="card__cover" src="assets/img/1.png" alt="">
-                <div class="card__body">
-                    <h3 class="card__title">Cafeteria Del Grano</h3>
-                    <p class="card__description">Projeto de uma cafeteria com cardápio.</p>
-                    <ul class="card__list">
-                        <li class="card__item">Exibição de diferentes tipos de cafés em cards.</li>
-                        <li class="card__item">Carregamento dinâmico dos dados dos produtos a partir de um arquivo JSON.
-                        </li>
-                        <li class="card__item">Modal para visualizar detalhes do produto ao clicar em um card.</li>
-                    </ul>
-                    <ul class="technologies__list">
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/css.svg" alt="Logo CSS">
-                        </li>
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Javascript.svg" alt="Logo Javascript">
-                        </li>
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Bootstrap.svg" alt="Logo Bootstrap">
-                        </li>
-                    </ul>
-                    <div class="card__buttons">
-                        <a href="https://javascript-bootstrap-css-cafeteria.vercel.app/">
-                            <button class="btn btn--primary">
-                                <span>PRÉVIA</span>
-                                <i class="bi bi-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        <a href="https://github.com/ErnandesNeponuceno/javascript-bootstrap-css-cafeteria">
-                            <button class="btn">
-                                <span>Repositório</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__card">
-                <img class="card__cover" src="assets/img/2.png" alt="">
-                <div class="card__body">
-                    <h3 class="card__title">PlayStation Store</h3>
-                    <p class="card__description">Projeto de clone fiel da PS Store com Angular.</p>
-                    <ul class="card__list">
-                        <li class="card__item">Clone fiel da página PS Store.</li>
-                        <li class="card__item">Criação de elementos dinamicamente com a diretiva NgFor.</li>
-                        <li class="card__item">Utilização da biblioteca Swiper.</li>
-                    </ul>
-                    <ul class="technologies__list">
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Angular.svg" alt="Logo Angular">
-                        </li>
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/Typescript.svg" alt="Logo Typescript">
-                        </li>
-                        <li class="technologies__item">
-                            <img class="technologies__logo" src="assets/img/tech/css.svg" alt="Logo CSS">
-                        </li>
-                    </ul>
-                    <div class="card__buttons">
-                        <a href="https://angular-ps-store-smi3.vercel.app/">
-                            <button class="btn btn--primary">
-                                <span>PRÉVIA</span>
-                                <i class="bi bi-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        <a href="https://github.com/ErnandesNeponuceno/angular-ps-store">
-                            <button class="btn">
-                                <span>Repositório</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="projects__container" id="projects-container">
+           <!-- <Projetos>-->
             <a href="https://github.com/ernandesneponuceno">
                 <button class="btn btn--primary">
                     <span>Ver Todos os Projetos</span>
@@ -337,117 +169,8 @@
             </div>
             <div class="col2">
                 <h3>Cursos</h3>
-                <div id="accordion">
-                    <div class="accordion__item active">
-                        <button class="accordion__header start">
-                            <span>Formação Angular</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion__body">
-                            <p>
-                                Digital Innovation One. Mai 2024. 37h.
-                            </p>
-                            <p>
-                                Compreensão dos fundamentos do Angular, sua 
-                                arquitetura e configuração do ambiente de desenvolvimento.
-                                TypeScript: Aprendizado da linguagem TypeScript, na qual o Angular é construído.
-                                Componentes e Templates: Criação e uso de componentes, e construção de templates.
-                                Data Binding e Diretivas: Exploração de data binding e uso de diretivas Angular.
-                                Serviços e Injeção de Dependência: Implementação de serviços e compreensão da injeção 
-                                de dependência.
-                                Roteamento e Navegação: Configuração e gerenciamento de roteamento e navegação em 
-                                aplicativos Angular.
-                                Cliente HTTP: Comunicação com serviços de backend usando o módulo cliente HTTP.
-                                Formulários: Trabalho com formulários baseados em templates e reativos.
-                                Tópicos Avançados: Otimização de desempenho, Angular CLI e estratégias de implantação.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordion__item">
-                        <button class="accordion__header">
-                            <span>Formação JavaScript Developer</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion__body">
-                            <p>
-                                Digital Innovation One. Jan 2024. 39h.
-                            </p>
-                            <p>
-                                Requisições Assíncronas (Async/Await):
-                                Implementação de requisições assíncronas com Async/Await para melhorar a eficiência e responsividade das aplicações.     
-                                Manipulação do DOM:
-                                Habilidade para manipular o DOM de forma eficaz, dinâmica e interativa.                          
-                                Utilização e Funcionamento de APIs:
-                                Integração e manipulação de dados externos através de APIs, compreendendo seu funcionamento e uso correto.
-                                Uso de Map e Join:
-                                Aplicação das funções Map e Join para iterar e manipular elementos de arrays de forma concisa.
-                                Método:
-                                Adoção de boas práticas na organização e estruturação do código para alcançar objetivos propostos.
-                                Funções:
-                                Utilização de funções para encapsular e reutilizar blocos de código, promovendo modularidade e manutenibilidade no desenvolvimento web.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordion__item">
-                        <button class="accordion__header end">
-                            <span>Impulso JavaScript Evolution</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion__body end">
-                            <p>
-                                Digital Innovation One. Ago 2024. 104h.
-                            </p>
-                            <p>
-                                Princípios de desenvolvimento de Software: 
-                                Introdução à programação e pensamento computacional. 
-                                Introdução ao git e GitHub.
-                                Fundamentos Web com HTML e CSS:
-                                Criação de Websites com HTML5 e CSS3.
-                                Posicionando elementos com Flexbox em CSS.
-                                Dominando a linguagem de programação com JavaScript: 
-                                Sintaxe básica e operadores em JavaScript.
-                                Funções.
-                                Debugging e error handling com JavaScript.
-                                Manipulação do D.O.M.
-                                Orientação a objetos.
-                                Introdução ao TypeScript: Explorando classes, tipos e interfaces.
-                                Desenvolvimento Web com React:
-                                Introdução ao ReactJs.
-                                Introdução do React Hooks.
-                                Banco de dados relacionais (SQL) e não relacionais (NoSQL)
-                                Introdução ao MongoDB e banco de dados NoSQL.
-                                Back-end: Criando API com NodeJs.
-                                Fundamentos de Node.js e Jest.
-                                Pirâmide de testes na prática explorando Jest e TDD.
-                                Microsserviços e integração com Node.js.
-                                Aplicando o Estilo Arquitetural REST com Node.js
-                                Criando uma API REST com Node.js e TypeORM.
-                                Integrando um Backend em Node.js com um Frontend em React.
-                                Desafios de projetos práticos. 
-                                Trabalhando com States e Effects no ReactJs.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordion__item">
-                        <button class="accordion__header end">
-                            <span>Transforma Tec 2024</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion__body end">
-                            <p>
-                                Digital Innovation One. Ago 2024. 81h.
-                            </p>
-                            <p>
-                                Trilha completa de HTML, JavaScript e CSS.
-                                Principios de Desenvolvimento de Software Colaborativo.
-                                Logica de programação.
-                                Versionamento de código com git e github.
-                                Construção de Páginas web com HTML, CSS e Javascript por meio de projetos praticos.
-                                Trabalhando com funções, objetos, classes, Arrays e estruturas de repetição com Javascript.
-                                Introdução ao consumo de API.
-                            </p>
-                        </div>
-                    </div>
+                <div id="accordion" class="accordion">
+                    <!-- Cursos -->
                 </div>
     </section>
     <section id="contato" class="contact">
@@ -487,5 +210,8 @@
         </p>
     </footer>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/accordion.js"></script>
 </body>
 </html>
