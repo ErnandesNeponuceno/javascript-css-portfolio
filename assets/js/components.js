@@ -6,12 +6,13 @@ const menuData = [
 ];
 
 const technologies = [
-    { src: "assets/img/tech/css.svg", alt: "Logo CSS" },
-    { src: "assets/img/tech/Javascript.svg", alt: "Logo Javascript" },
-    { src: "assets/img/tech/Angular.svg", alt: "Logo Angular" },
-    { src: "assets/img/tech/TypeScript.svg", alt: "Logo TypeScript" },
-    { src: "assets/img/tech/Bootstrap.svg", alt: "Logo Bootstrap" },
-    { src: "assets/img/tech/Tailwind.svg", alt: "Logo Tailwind" }
+    { src: "assets/img/tech/css.png", alt: "Logo CSS" },
+    { src: "assets/img/tech/javascript.png", alt: "Logo Javascript" },
+    { src: "assets/img/tech/angular.png", alt: "Logo Angular" },
+    { src: "assets/img/tech/typeScript.png", alt: "Logo TypeScript" },
+    { src: "assets/img/tech/bootstrap.png", alt: "Logo Bootstrap" },
+    { src: "assets/img/tech/salesforce.png", alt: "Logo Salesforce" },
+    { src: "assets/img/tech/tailwind.png", alt: "Logo Tailwind" }
 ];
 
 

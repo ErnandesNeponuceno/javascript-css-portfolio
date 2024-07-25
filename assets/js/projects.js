@@ -9,9 +9,9 @@ const projects = [
             "Utilização de Angular e TypeScript na criação de elementos inteligentes."
         ],
         technologies: [
-            { src: "assets/img/tech/css.svg", alt: "Logo CSS" },
-            { src: "assets/img/tech/Typescript.svg", alt: "Logo Typescript" },
-            { src: "assets/img/tech/Angular.svg", alt: "Logo Angular" }
+            { src: "assets/img/tech/css.png", alt: "Logo CSS" },
+            { src: "assets/img/tech/typescript.png", alt: "Logo Typescript" },
+            { src: "assets/img/tech/angular.png", alt: "Logo Angular" }
         ],
         previewLink: "https://angular-typescript-css-site-clinica.vercel.app/home",
         repoLink: "https://github.com/ErnandesNeponuceno/angular-typescript-css-site-clinica"
@@ -26,9 +26,9 @@ const projects = [
             "Modal para visualizar detalhes do produto ao clicar em um card."
         ],
         technologies: [
-            { src: "assets/img/tech/css.svg", alt: "Logo CSS" },
-            { src: "assets/img/tech/Javascript.svg", alt: "Logo Javascript" },
-            { src: "assets/img/tech/Bootstrap.svg", alt: "Logo Bootstrap" }
+            { src: "assets/img/tech/css.png", alt: "Logo CSS" },
+            { src: "assets/img/tech/javascript.png", alt: "Logo Javascript" },
+            { src: "assets/img/tech/bootstrap.png", alt: "Logo Bootstrap" }
         ],
         previewLink: "https://javascript-bootstrap-css-cafeteria.vercel.app/",
         repoLink: "https://github.com/ErnandesNeponuceno/javascript-bootstrap-css-cafeteria"
@@ -43,9 +43,9 @@ const projects = [
             "Utilização da biblioteca Swiper."
         ],
         technologies: [
-            { src: "assets/img/tech/Angular.svg", alt: "Logo Angular" },
-            { src: "assets/img/tech/Typescript.svg", alt: "Logo Typescript" },
-            { src: "assets/img/tech/css.svg", alt: "Logo CSS" }
+            { src: "assets/img/tech/angular.png", alt: "Logo Angular" },
+            { src: "assets/img/tech/typescript.png", alt: "Logo Typescript" },
+            { src: "assets/img/tech/css.png", alt: "Logo CSS" }
         ],
         previewLink: "https://angular-ps-store-smi3.vercel.app/",
         repoLink: "https://github.com/ErnandesNeponuceno/angular-ps-store"
