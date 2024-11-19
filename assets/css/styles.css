@@ -31,6 +31,7 @@ html[data-theme='light'] .brand__logo{
 
 html[data-theme='dark'] .technologies__logo {
   filter: invert(80%);
+  
 }
 
 a {
@@ -91,6 +92,7 @@ i{
   scrollbar-color: var(--secondary-bg-color) transparent;
 }
 
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -123,6 +125,7 @@ body{
   align-items: center;
   padding: .5rem 1rem;
   width: 100%;
+  z-index: 1;
 }
 
 .header__logo{
