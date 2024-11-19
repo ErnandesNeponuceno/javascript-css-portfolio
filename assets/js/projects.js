@@ -1,6 +1,6 @@
 const projects = [
     {
-        coverSrc: "assets/img/3.png",
+        coverSrc: "assets/img/projects/3.png",
         title: "Projeto Clínica Odonto +",
         description: "Site completo para uma clinica de odontologia.",
         features: [
@@ -17,7 +17,7 @@ const projects = [
         repoLink: "https://github.com/ErnandesNeponuceno/angular-typescript-css-site-clinica"
     },
     {
-        coverSrc: "assets/img/1.png",
+        coverSrc: "assets/img/projects/1.png",
         title: "Cafeteria Del Grano",
         description: "Projeto de uma cafeteria com cardápio.",
         features: [
@@ -34,7 +34,7 @@ const projects = [
         repoLink: "https://github.com/ErnandesNeponuceno/javascript-bootstrap-css-cafeteria"
     },
     {
-        coverSrc: "assets/img/2.png",
+        coverSrc: "assets/img/projects/2.png",
         title: "PlayStation Store",
         description: "Projeto de clone fiel da PS Store com Angular.",
         features: [
